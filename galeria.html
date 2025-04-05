@@ -18,15 +18,34 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
+    .contact-btn {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: #25d366; /* WhatsApp color */
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .contact-btn:hover {
+      background-color: #128c7e; /* Darker shade on hover */
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a tu galería</h1>
+  <h1>Galería</h1>
   <div class="gallery">
     <img src="fotos/foto1.jpg" alt="Foto 1">
     <img src="fotos/foto2.jpg" alt="Foto 2">
     <img src="fotos/foto3.jpg" alt="Foto 3">
     <!-- Agrega más imágenes si quieres -->
   </div>
+
+  <!-- Botón para abrir WhatsApp -->
+  <a href="https://wa.me/2217305123" class="contact-btn" target="_blank">Abrir Chat de WhatsApp</a>
 </body>
 </html>
