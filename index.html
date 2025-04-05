@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ÉticoBook - Inicia sesión</title>
+  <style>
+    body { background: #e9ebee; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .login-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); width: 320px; }
+    h1 { text-align: center; color: #1877f2; margin-bottom: 20px; }
+    input, button { width: 100%; padding: 12px; margin: 8px 0; font-size: 16px; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #1877f2; color: white; border: none; cursor: pointer; }
+    .warning { color: red; text-align: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>ÉticoBook</h1>
+    <input type="text" id="email" placeholder="Correo electrónico" />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <button onclick="login()">Iniciar sesión</button>
+    <div id="error-message" class="warning"></div>
+  </div>
+
+  <script>
+    const validEmail = "usuario@ejemplo.com";
+    const validPassword = "contraseña123";
+
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const error = document.getElementById("error-message");
+
+      if (email === validEmail && password === validPassword) {
+        // Redirigir a la galería
+        window.location.href = "galeria.html";
+      } else {
+        error.textContent = "Correo o contraseña incorrectos.";
+      }
+    }
+  </script>
+</body>
+    </html>
